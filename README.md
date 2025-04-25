@@ -1,4 +1,4 @@
-# ♿ Application Web Accessible – [Nom du projet]
+# ♿ Application Web Accessible – SobriSanté
 
 ## 🎯 Objectif
 Développement d’une application web **ultra-légère** (HTML/CSS/JS minimal), respectant les normes **WCAG 2.1 AAA**, pensée pour fonctionner :
