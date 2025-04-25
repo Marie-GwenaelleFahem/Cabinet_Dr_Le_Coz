@@ -9,7 +9,7 @@ Développement d’une application web **ultra-légère** (HTML/CSS/JS minimal),
 ---
 
 ## Équipe
-- **Lead dev** : Marie-Gwenaëlle Fahem  
+- **Lead dev** : Marie-Gwenaëlle
 - Mehdi – Page d'accueil 
 - Julie – Page “Urgences & numéros utiles” 
 - Jonathan – Page "Info Pratiques"
@@ -62,5 +62,6 @@ Outils utilisés :
 /assets/css/styles.css
 /assets/js/app.js
 /assets/images/
+/pages
 /.github/workflows/deploy.yml
 README.md
