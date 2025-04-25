@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #000;
+    --bg-color: #fff;
+    --accent-color: #005fcc;
+    --focus-color: #FFD700;
+  }
+
+  body {
+    font-family: sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  a {
+    color: var(--accent-color);
+  }
+
+  a:focus, button:focus, details:focus-within {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 4px;
+  }
+
+  h1, h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.2rem;
+  }
+
+  details summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
