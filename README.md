@@ -10,10 +10,10 @@ Développement d’une application web **ultra-légère** (HTML/CSS/JS minimal),
 
 ## Équipe
 - **Lead dev** : Marie-Gwenaëlle Fahem  
-- [Mehdi] – Page d'accueil 
-- [Julie] – Page “Urgences & numéros utiles” 
-- [Jonathan] – Page "Info Pratiques"
-- [Rosine] – Tests / optimisation / déploiement
+- Mehdi – Page d'accueil 
+- Julie – Page “Urgences & numéros utiles” 
+- Jonathan – Page "Info Pratiques"
+- Rosine – Tests / optimisation / déploiement
 
 ---
 
