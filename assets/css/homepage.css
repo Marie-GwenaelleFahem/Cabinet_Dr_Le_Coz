@@ -1,0 +1,122 @@
+
+:root {
+    color-scheme: light dark;
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #003366;
+    --highlight-color: #ffcc00;
+    --footer-bg-color: #003366;
+    --link-color: #ffffff;
+    --link-hover-color: #ffcc00; 
+    --footer-text-color: #ffffff;
+}
+  
+@media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #1e1e1e;
+      --text-color: #f5f5f5;
+      --accent-color: #00aaff;
+      --highlight-color: #ffcc00;
+      --footer-bg-color: #004d80;
+      --link-color: #f5f5f5;
+      --link-hover-color: #ffcc00;
+      --footer-text-color: #f5f5f5;
+    }
+}
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+  
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: var(--accent-color);
+    padding: 1rem 2rem;
+}
+  
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+nav {
+    display: flex;
+    gap: 2rem;
+}
+  
+nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+nav a:hover,
+nav a:focus {
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+    outline: none;
+    transform: scale(1.1); 
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+/* Main content */
+main {
+    flex: 1;
+    padding: 2rem;
+}
+  
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+    border-top: 2px solid var(--highlight-color);
+}
+  
+footer p {
+    margin: 0;
+}
+  
+footer a {
+    text-decoration: none; 
+    color: var(--footer-text-color);
+}
+  
+footer a:hover,
+footer a:focus {
+    color: var(--highlight-color);
+}
+  
+/* Accessibilité : Focus visible */
+a:focus {
+    outline: 3px solid var(--highlight-color);
+    outline-offset: 2px;
+}
+  
+  
