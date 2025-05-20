@@ -40,7 +40,7 @@ Normes respectées :
 
 ## Déploiement
 Application accessible ici :  
-🔗 **[Lien vers le site GitHub Pages]**
+🔗 **[https://marie-gwenaellefahem.github.io/SobriSant-/]**
 
 Déploiement automatique via **GitHub Actions** à chaque `push` sur la branche `main`.
 
