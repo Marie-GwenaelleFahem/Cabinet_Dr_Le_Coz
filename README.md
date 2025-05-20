@@ -13,7 +13,7 @@ Développement d’une application web **ultra-légère** (HTML/CSS/JS minimal),
 - Mehdi – Page d'accueil 
 - Julie – Page “Urgences & numéros utiles” 
 - Jonathan – Page "Info Pratiques"
-- Rosine – Tests / optimisation / déploiement
+- Rosine – Tests / optimisation
 
 ---
 
@@ -59,9 +59,10 @@ Outils utilisés :
 ## Structure du code
 ```plaintext
 /index.html
+/infos-pratiques.html
+/urgences.html
 /assets/css/styles.css
 /assets/js/app.js
 /assets/images/
-/pages
 /.github/workflows/deploy.yml
 README.md
