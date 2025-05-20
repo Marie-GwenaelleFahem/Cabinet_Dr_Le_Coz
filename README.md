@@ -40,7 +40,7 @@ Normes respectées :
 
 ## Déploiement
 Application accessible ici :  
-🔗 **[Lien vers ton site GitHub Pages]**
+🔗 **[Lien vers le site GitHub Pages]**
 
 Déploiement automatique via **GitHub Actions** à chaque `push` sur la branche `main`.
 
@@ -63,4 +63,5 @@ Outils utilisés :
 /assets/js/app.js
 /assets/images/
 /pages
+/.github/workflows/deploy.yml
 README.md
