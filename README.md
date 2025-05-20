@@ -63,5 +63,4 @@ Outils utilisés :
 /assets/js/app.js
 /assets/images/
 /pages
-/.github/workflows/deploy.yml
 README.md
