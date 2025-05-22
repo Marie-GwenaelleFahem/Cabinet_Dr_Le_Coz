@@ -3,153 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" />
-    <link rel="stylesheet" href="assets/css/homepage.css" />
-    <link rel="stylesheet" href="assets/css/infospratique.css" />
-    <title>Infos Pratiques</title>
+    <meta
+      name="description"
+      content="Informations pratiques du cabinet du Dr. Jérôme Le Coz : documents nécessaires, horaires, visites à domicile et plus."
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Infos Pratiques - Cabinet Le Coz</title>
   </head>
 
   <body>
+    <a href="#main" class="sr-only">Passer au contenu principal</a>
+    <a href="#footer" class="sr-only">Aller au pied de page</a>
+
     <header role="banner">
+      <h1 class="doctor-name">Dr. Jérôme Le Coz</h1>
       <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="infos-pratiques.html">Infos Pratiques</a></li>
-          <li><a href="#">Urgences et numéros utiles</a></li>
+          <li>
+            <a href="infos-pratiques.html" aria-current="page"
+              >Infos Pratiques</a
+            >
+          </li>
+          <li><a href="urgences.html">Urgences et numéros utiles</a></li>
         </ul>
       </nav>
     </header>
 
-    <noscript>
-      <p
-        role="alert"
-        style="background: #ffe; padding: 1rem; border: 1px solid #ccc"
-      >
-        Ce site fonctionne sans JavaScript. Vous pouvez naviguer librement,
-        toutes les fonctionnalités sont accessibles.
-      </p>
-    </noscript>
+    <main id="main" role="main">
+      <noscript>
+        <div class="alert-noscript" role="alert">
+          <p>
+            JavaScript est désactivé. Le contenu reste accessible, mais
+            certaines fonctionnalités peuvent être limitées.
+          </p>
+        </div>
+      </noscript>
 
-    <!-- Début section Infos pratiques - Jonathan Luembe -->
-    <section id="accordion" aria-labelledby="documents">
-      <h1 id="documents">Informations pratiques</h1>
+      <!-- Début section Infos pratiques - Jonathan Luembe -->
+      <section id="accordion" aria-labelledby="documents">
+        <h2 id="documents">Informations pratiques</h2>
+        <div class="accordion-container">
+          <details>
+            <summary tabindex="0" aria-expanded="false">
+              Quels documents apporter ?
+            </summary>
+            <div class="details-content">
+              <ul>
+                <li>
+                  <strong>Première consultation :</strong> carte vitale, pièce
+                  d'identité, ordonnance si besoin
+                </li>
+                <li>
+                  <strong>Renouvellement :</strong> ancienne ordonnance, carte
+                  vitale
+                </li>
+                <li>
+                  <strong>Suivi post-opératoire :</strong> compte-rendu
+                  opératoire
+                </li>
+              </ul>
+            </div>
+          </details>
 
-      <details>
-        <summary tabindex="0" aria-expanded="false">
-          Quels documents apporter ?
-        </summary>
-        <ul>
-          <li>
-            <strong>Première consultation :</strong> carte vitale, pièce
-            d'identité, ordonnance si besoin
-          </li>
-          <li>
-            <strong>Renouvellement :</strong> ancienne ordonnance, carte vitale
-          </li>
-          <li>
-            <strong>Suivi post-opératoire :</strong> compte-rendu opératoire
-          </li>
-        </ul>
-      </details>
+          <details>
+            <summary tabindex="0" aria-expanded="false">
+              Horaires du cabinet
+            </summary>
+            <div class="details-content">
+              <ul>
+                <li>
+                  <strong>Jours :</strong> Mardi, jeudi et vendredi après-midi
+                </li>
+                <li><strong>Heures :</strong> 8h00 à 12h00 et 14h00 à 19h00</li>
+                <li>
+                  <strong>Adresse :</strong> 14 rue Alexandre Falguière, 56400
+                  Saint-Anne-d'Auray
+                </li>
+              </ul>
+              <img
+                src="assets/images/Sobrisante.webp"
+                alt="Plan d'accès au cabinet Sobrisanté à Saint-Anne-d'Auray"
+                loading="lazy"
+              />
+            </div>
+          </details>
 
-      <details>
-        <summary tabindex="0" aria-expanded="false">
-          Horaires du cabinet
-        </summary>
-        <ul>
-          <li><strong>Jours :</strong> Mardi, jeudi et vendredi après-midi</li>
-          <li><strong>Heures :</strong> 8h00 à 12h00 et 14h00 à 19h00</li>
-          <li>
-            <strong>Adresse :</strong> 14 rue Alexandre Falguière, 56400
-            Saint-Anne-d'Auray
-          </li>
-        </ul>
-        <img
-          src="assets/images/Sobrisante.webp"
-          alt="Plan d'accès au cabinet Sobrisanté à Saint-Anne-d'Auray"
-          loading="lazy"
-        />
-      </details>
+          <details>
+            <summary tabindex="0" aria-expanded="false">
+              Visites à domicile
+            </summary>
+            <div class="details-content">
+              <ul>
+                <li>
+                  <strong>Jours :</strong> Lundi, mercredi et vendredi matin de
+                  8h00 à 12h00
+                </li>
+                <li>
+                  <strong>Conditions :</strong> Personne à mobilité réduite,
+                  personne âgée
+                </li>
+                <li><strong>Zone :</strong> Kerdeliau, Gorvénec et Lénonès</li>
+              </ul>
+            </div>
+          </details>
 
-      <details>
-        <summary tabindex="0" aria-expanded="false">Visites à domicile</summary>
-        <ul>
-          <li>
-            <strong>Jours :</strong> Lundi, mercredi et vendredi matin de 8h00 à
-            12h00
-          </li>
-          <li>
-            <strong>Conditions :</strong> Personne à mobilité réduite, personne
-            âgée
-          </li>
-          <li><strong>Zone :</strong> Kerdeliau, Gorvénec et Lénonès</li>
-        </ul>
-      </details>
+          <details>
+            <summary tabindex="0" aria-expanded="false">
+              Foire aux questions
+            </summary>
+            <div class="details-content">
+              <ul>
+                <li>
+                  <strong>Acceptez-vous la carte vitale ?</strong> Oui, elle est
+                  obligatoire pour toute consultation remboursable.
+                </li>
+                <li>
+                  <strong>Puis-je venir sans rendez-vous ?</strong> Non, les
+                  consultations sont uniquement sur rendez-vous.
+                </li>
+                <li>
+                  <strong>Acceptez-vous les nouveaux patients ?</strong> Oui,
+                  dans la limite des créneaux disponibles.
+                </li>
+              </ul>
+            </div>
+          </details>
 
-      <details>
-        <summary tabindex="0" aria-expanded="false">
-          Foire aux questions
-        </summary>
-        <ul>
-          <li>
-            <strong>Acceptez-vous la carte vitale ?</strong> Oui, elle est
-            obligatoire pour toute consultation remboursable.
-          </li>
-          <li>
-            <strong>Puis-je venir sans rendez-vous ?</strong> Non, les
-            consultations sont uniquement sur rendez-vous.
-          </li>
-          <li>
-            <strong>Acceptez-vous les nouveaux patients ?</strong> Oui, dans la
-            limite des créneaux disponibles.
-          </li>
-        </ul>
-      </details>
+          <details>
+            <summary tabindex="0" aria-expanded="false">Accessibilité</summary>
+            <div class="details-content">
+              <p>Accès PMR facilité : rampe installée à l'entrée</p>
+            </div>
+          </details>
 
-      <details>
-        <summary tabindex="0" aria-expanded="false">Accessibilité</summary>
-        <p>Accès PMR facilité : rampe installée à l'entrée</p>
-      </details>
+          <details>
+            <summary tabindex="0" aria-expanded="false">Contact</summary>
+            <div class="details-content">
+              <p>
+                Pour toute question, vous pouvez nous contacter par téléphone au
+                <br />
+                <strong>01 23 45 67 89</strong> ou par
+                <a href="mailto:cabinetstannedauray@gmail.com">email</a>.<br />
+                Nous vous répondrons dans les plus brefs délais.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
 
-      <details>
-        <summary tabindex="0" aria-expanded="false">Contact</summary>
-        <p>
-          Pour toute question, vous pouvez nous contacter par téléphone au
-          <br />
-          <strong>01 23 45 67 89</strong> ou par
-          <a href="mailto:cabinetstannedauray@gmail.com">email</a>.<br />
-          Nous vous répondrons dans les plus brefs délais.
-        </p>
-      </details>
-    </section>
-    <!-- Fin section Infos pratiques - Jonathan Luembe -->
-
-    <footer role="contentinfo">
-      <p>&copy; 2025 - Site sobre et accessible</p>
+    <footer id="footer" role="contentinfo">
+      <div class="accessibility-controls">
+        <button id="contrast-toggle" aria-pressed="false" class="access-button">
+          Contraste élevé
+        </button>
+        <button
+          id="text-smaller"
+          class="access-button"
+          aria-label="Réduire la taille du texte"
+        >
+          A-
+        </button>
+        <button
+          id="text-larger"
+          class="access-button"
+          aria-label="Augmenter la taille du texte"
+        >
+          A+
+        </button>
+      </div>
+      <p>&copy; 2024 - Cabinet du Dr. Jérôme Le Coz</p>
       <p><a href="#accessibilite">Déclaration d'accessibilité</a></p>
+      <p class="mentions-legales">
+        <a href="#">Mentions légales</a> |
+        <a href="#">Politique de confidentialité</a> |
+        <a href="mailto:contact@docteurlecoz.fr">Contact</a>
+      </p>
     </footer>
 
-    <script>
-      const accordion = document.getElementById("accordion");
-      const items = accordion.querySelectorAll("details");
-
-      items.forEach((item) => {
-        item.addEventListener("toggle", () => {
-          const isOpen = item.open;
-          const summary = item.querySelector("summary");
-          summary.setAttribute("aria-expanded", isOpen);
-          if (isOpen) {
-            items.forEach((otherItem) => {
-              if (otherItem !== item) {
-                otherItem.open = false;
-                otherItem
-                  .querySelector("summary")
-                  .setAttribute("aria-expanded", "false");
-              }
-            });
-          }
-        });
-      });
-    </script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>
