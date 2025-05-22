@@ -9,12 +9,18 @@
     />
     <title>Urgences et Numéros Utiles - Cabinet Le Coz</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/images/favicon-32x32.png"
+    />
   </head>
   <body>
     <a href="#main" class="sr-only">Passer au contenu principal</a>
     <a href="#footer" class="sr-only">Aller au pied de page</a>
 
     <header role="banner">
+      <h1 class="doctor-name">Dr. Jérôme Le Coz</h1>
       <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="../index.html" aria-current="false">Accueil</a></li>
@@ -341,10 +347,32 @@
     </main>
 
     <footer id="footer" role="contentinfo">
-      <div>
-        <p>&copy; 2025 - Site sobre et accessible</p>
-        <p><a href="#accessibilite">Déclaration d'accessibilité</a></p>
+      <div class="accessibility-controls">
+        <button id="contrast-toggle" aria-pressed="false" class="access-button">
+          Contraste élevé
+        </button>
+        <button
+          id="text-smaller"
+          class="access-button"
+          aria-label="Réduire la taille du texte"
+        >
+          A-
+        </button>
+        <button
+          id="text-larger"
+          class="access-button"
+          aria-label="Augmenter la taille du texte"
+        >
+          A+
+        </button>
       </div>
+      <p>&copy; 2024 - Cabinet du Dr. Jérôme Le Coz</p>
+      <p><a href="#accessibilite">Déclaration d'accessibilité</a></p>
+      <p class="mentions-legales">
+        <a href="#">Mentions légales</a> |
+        <a href="#">Politique de confidentialité</a> |
+        <a href="mailto:contact@docteurlecoz.fr">Contact</a>
+      </p>
     </footer>
 
     <script type="text/javascript" src="../assets/js/script.js"></script>
