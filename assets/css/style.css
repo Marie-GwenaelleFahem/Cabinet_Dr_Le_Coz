@@ -695,8 +695,8 @@ details .details-content strong {
   --accent-color: #ffcc00;
   --highlight-color: #ffffff;
   --footer-bg-color: #000000;
-  --link-color: #ffcc00;
-  --link-hover-color: #ffffff;
+  --link-color: #ffffff;
+  --link-hover-color: #ffcc00;
   --footer-text-color: #ffffff;
   --button-bg: #ffcc00;
   --button-text: #000000;
@@ -715,4 +715,28 @@ details .details-content strong {
   --testimonial-bg: #000000;
   --testimonial-border: #ffcc00;
   --map-bg: #000000;
+}
+
+/* Style high contrast */
+.high-contrast .urgence,
+.high-contrast .pharmacie {
+  background-color: #000000;
+  border-left: 5px solid #ffcc00;
+}
+
+.high-contrast details summary {
+  background-color: #000000;
+  border: 2px solid #ffcc00;
+  color: #ffffff;
+}
+
+.high-contrast details[open] summary {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+.high-contrast .details-content {
+  background-color: #000000;
+  border: 2px solid #ffcc00;
+  color: #ffffff;
 }
