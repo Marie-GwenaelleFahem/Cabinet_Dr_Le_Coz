@@ -580,16 +580,22 @@ details summary {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-top: 1rem;
+  position: relative;
+}
+
+details summary:focus {
+  outline: 3px solid var(--highlight-color);
+  outline-offset: 2px;
+}
+
+details summary:focus-visible {
+  outline: 3px solid var(--highlight-color);
+  outline-offset: 2px;
 }
 
 details[open] summary {
   background-color: #e0f0ff;
   border-color: #66afe9;
-}
-
-details summary:focus {
-  outline: 1px solid var(--focus-color);
-  outline-offset: 4px;
 }
 
 details .details-content img {
