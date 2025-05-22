@@ -622,3 +622,97 @@ details .details-content strong {
     transition: none;
   }
 }
+
+/* urgences */
+.numero {
+  background-color: var(--service-bg);
+  padding: 1.125rem;
+  margin-bottom: 1.125rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.numero:focus-within {
+  box-shadow: 0 0 0 3px var(--accent-color);
+}
+
+.urgence {
+  border-left: 5px solid #ff0000;
+  background-color: #fff5f5;
+}
+
+.utile {
+  border-left: 6px solid var(--accent-color);
+}
+
+.pharmacie {
+  border-left: 5px solid #4caf50;
+  background-color: #f5fff5;
+}
+
+.telephone {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  margin: 0.625rem 0;
+  letter-spacing: 0.04em;
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.telephone:hover,
+.telephone:focus {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.horaires {
+  margin-top: 1.25rem;
+  background-color: var(--service-bg);
+  padding: 0.9375rem;
+  border-radius: 5px;
+  border: 1px solid var(--service-border);
+}
+
+.horaires table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.horaires th,
+.horaires td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--service-border);
+}
+
+/* High contrast mode */
+.high-contrast {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --accent-color: #ffcc00;
+  --highlight-color: #ffffff;
+  --footer-bg-color: #000000;
+  --link-color: #ffcc00;
+  --link-hover-color: #ffffff;
+  --footer-text-color: #ffffff;
+  --button-bg: #ffcc00;
+  --button-text: #000000;
+  --button-hover-bg: #ffffff;
+  --table-header-bg: #ffcc00;
+  --table-header-text: #000000;
+  --table-border: #ffffff;
+  --table-row-alt: #333333;
+  --noscript-bg: #ffcc00;
+  --noscript-text: #000000;
+  --info-bg: #000000;
+  --info-border: #ffcc00;
+  --info-text: #ffffff;
+  --service-bg: #000000;
+  --service-border: #ffcc00;
+  --testimonial-bg: #000000;
+  --testimonial-border: #ffcc00;
+  --map-bg: #000000;
+}
