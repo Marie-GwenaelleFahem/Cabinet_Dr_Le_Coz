@@ -621,6 +621,10 @@ textarea:focus {
   border-radius: 0 0 4px 4px;
 }
 
+.details-content a {
+  color: var(--accent-color);
+}
+
 details summary {
   cursor: pointer;
   font-weight: bold;

@@ -102,31 +102,29 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Gestion des accordéons
-  const accordion = document.getElementById("accordion");
-  if (accordion) {
-    const items = accordion.querySelectorAll("details");
 
-    items.forEach((item) => {
-      item.addEventListener("toggle", () => {
-        const isOpen = item.open;
-        const summary = item.querySelector("summary");
-        summary.setAttribute("aria-expanded", isOpen);
-        if (isOpen) {
-          items.forEach((otherItem) => {
-            if (otherItem !== item) {
-              otherItem.open = false;
-              otherItem
-                .querySelector("summary")
-                .setAttribute("aria-expanded", "false");
-            }
-          });
+  document.querySelectorAll("details").forEach((item) => {
+  const summary = item.querySelector("summary");
+  summary.setAttribute("aria-expanded", "false");
+
+  item.addEventListener("toggle", () => {
+    const isOpen = item.open;
+    summary.setAttribute("aria-expanded", isOpen);
+
+    if (isOpen) {
+      // ferme les autres détails ouverts
+      document.querySelectorAll("details[open]").forEach((other) => {
+        if (other !== item) {
+          other.open = false;
+          other.querySelector("summary").setAttribute("aria-expanded", "false");
         }
       });
-    });
+    }
+  });
+});
+  
+  // Disable animations if user prefers reduced motion
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.documentElement.classList.add("reduced-motion");
   }
 });
-
-// Disable animations if user prefers reduced motion
-if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  document.documentElement.classList.add("reduced-motion");
-}
