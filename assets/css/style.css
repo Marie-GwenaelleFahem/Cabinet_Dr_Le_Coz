@@ -43,6 +43,54 @@ body {
   font-size: 16px;
 }
 
+.banniere-intro {
+  background-color: #002333;
+  color: #ffffff;
+  padding: 2rem 1rem;
+}
+
+.banniere-contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .banniere-contenu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.texte-intro {
+  max-width: 600px;
+}
+
+.texte-intro h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fdd835; /* Jaune accessible (AA) sur fond sombre */
+}
+
+.texte-intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.tel-info {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.photo-docteur img {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
 /* Screen reader only */
 .sr-only {
   position: absolute;

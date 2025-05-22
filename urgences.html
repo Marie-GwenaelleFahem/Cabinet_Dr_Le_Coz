@@ -1,380 +1,276 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Numéros d'urgence et contacts utiles du cabinet Le Coz. SAMU, pompiers, pharmacies de garde et spécialistes médicaux."
-    />
-    <title>Urgences et Numéros Utiles - Cabinet Le Coz</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" />
-  </head>
-  <body>
-    <a href="#main" class="sr-only">Passer au contenu principal</a>
-    <a href="#footer" class="sr-only">Aller au pied de page</a>
 
-    <header role="banner">
-      <h1 class="doctor-name">Dr. Jérôme Le Coz</h1>
-      <nav aria-label="Navigation principale">
-        <ul class="nav-list">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="infos-pratiques.html">Infos Pratiques</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Numéros d'urgence et contacts utiles du cabinet Le Coz. SAMU, pompiers, pharmacies de garde et spécialistes médicaux." />
+  <title>Urgences et Numéros Utiles - Cabinet Le Coz</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" />
+</head>
+
+<body>
+  <a href="#main" class="sr-only">Passer au contenu principal</a>
+  <a href="#footer" class="sr-only">Aller au pied de page</a>
+
+  <header role="banner">
+    <h1 class="doctor-name">Dr. Jérôme Le Coz</h1>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="infos-pratiques.html">Infos Pratiques</a></li>
+        <li>
+          <a href="urgences.html" aria-current="page">Urgences et numéros utiles</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <noscript>
+      <div class="alert-noscript" role="alert">
+        <p>
+          JavaScript est désactivé. Le contenu reste accessible, mais
+          certaines fonctionnalités peuvent être limitées.
+        </p>
+      </div>
+    </noscript>
+    <section aria-labelledby="cabinet-titre" aria-live="polite">
+      <h2 id="cabinet-titre">Notre Cabinet</h2>
+
+      <div class="numero" role="region" aria-labelledby="cabinet-info">
+        <h3 id="cabinet-info">Cabinet Le Coz</h3>
+        <p>
+          5 rue des Korrigans<br />
+          22300 Lannion<br />
+          Bretagne, France
+        </p>
+        <a href="tel:0381579630" class="telephone" aria-label="Numéro du cabinet Le Coz : 03 81 57 96 30"
+          data-phone="0381579630">03 81 57 96 30</a>
+
+        <div class="horaires" role="region" aria-labelledby="horaires-titre">
+          <h4 id="horaires-titre">Horaires d'ouverture</h4>
+          <table aria-label="Horaires d'ouverture du cabinet">
+            <thead>
+              <tr>
+                <th scope="col">Jour</th>
+                <th scope="col">Matin</th>
+                <th scope="col">Après-midi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Lundi</th>
+                <td>Visite à domicile</td>
+                <td>14h00 - 18h00</td>
+              </tr>
+              <tr>
+                <th scope="row">Mardi</th>
+                <td>8h30 - 12h00</td>
+                <td>14h00 - 18h00</td>
+              </tr>
+              <tr>
+                <th scope="row">Mercredi</th>
+                <td>Visite à domicile</td>
+                <td>14h00 - 18h00</td>
+              </tr>
+              <tr>
+                <th scope="row">Jeudi</th>
+                <td>8h30 - 12h00</td>
+                <td>14h00 - 18h00</td>
+              </tr>
+              <tr>
+                <th scope="row">Vendredi</th>
+                <td>Visite à domicile</td>
+                <td>14h00 - 17h00</td>
+              </tr>
+              <tr>
+                <th scope="row">Samedi</th>
+                <td>9h00 - 12h00</td>
+                <td>Fermé</td>
+              </tr>
+              <tr>
+                <th scope="row">Dimanche</th>
+                <td colspan="2">Fermé</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="urgences-titre" aria-live="assertive">
+      <h2 id="urgences-titre">Numéros d'Urgence</h2>
+      <p class="sr-only">
+        Section contenant les numéros d'urgence vitaux à composer en cas
+        d'urgence médicale
+      </p>
+
+      <div class="numero urgence" role="region" aria-labelledby="samu-titre">
+        <h3 id="samu-titre">SAMU</h3>
+        <p>Pour toute urgence médicale vitale</p>
+        <a href="tel:15" class="telephone" aria-label="Numéro de téléphone du SAMU: 15" data-phone="15">15</a>
+      </div>
+
+      <div class="numero urgence" role="region" aria-labelledby="pompiers-titre">
+        <h3 id="pompiers-titre">Pompiers</h3>
+        <p>Pour les secours d'urgence</p>
+        <a href="tel:18" class="telephone" aria-label="Numéro de téléphone des Pompiers: 18" data-phone="18">18</a>
+      </div>
+
+      <div class="numero urgence" role="region" aria-labelledby="europe-titre">
+        <h3 id="europe-titre">Numéro d'Urgence Européen</h3>
+        <p>Accessible même sans réseau téléphonique</p>
+        <a href="tel:112" class="telephone" aria-label="Numéro d'urgence européen: 112" data-phone="112">112</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="pharmacies-titre" aria-live="polite">
+      <h2 id="pharmacies-titre">Pharmacies Proches</h2>
+      <p class="sr-only">
+        Section contenant les coordonnées des pharmacies de garde et
+        permanentes
+      </p>
+
+      <div class="numero pharmacie" role="region" aria-labelledby="pharmacie-centrale-titre">
+        <h3 id="pharmacie-centrale-titre">Pharmacie Centrale</h3>
+        <p>2 place du Village, 50400 Marchaux</p>
+        <a href="tel:0381579322" class="telephone" aria-label="Numéro de la Pharmacie Centrale: 03 81 57 93 22"
+          data-phone="0381579322">03 81 57 93 22</a>
+      </div>
+
+      <div class="numero pharmacie" role="region" aria-labelledby="pharmacie-garde-titre">
+        <h3 id="pharmacie-garde-titre">Pharmacie de Garde</h3>
+        <p>Service de garde des pharmacies du secteur</p>
+        <a href="tel:3237" class="telephone" aria-label="Numéro du service de pharmacie de garde: 3237"
+          data-phone="3237">3237</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="utiles-titre" aria-live="polite">
+      <h2 id="utiles-titre">Numéros Médicaux Utiles</h2>
+      <p class="sr-only">
+        Section contenant les numéros de téléphone des services médicaux non
+        urgents
+      </p>
+
+      <div class="numero utile" role="region" aria-labelledby="sos-titre">
+        <h3 id="sos-titre">SOS Médecins</h3>
+        <p>Consultations médicales à domicile</p>
+        <a href="tel:3624" class="telephone" aria-label="Numéro de SOS Médecins: 36 24" data-phone="3624">36 24</a>
+      </div>
+
+      <div class="numero utile" role="region" aria-labelledby="hopital-titre">
+        <h3 id="hopital-titre">Centre Hospitalier Régional</h3>
+        <p>Hôpital Jean Minjoz - Besançon</p>
+        <a href="tel:0381668166" class="telephone" aria-label="Numéro du Centre Hospitalier: 03 81 66 81 66"
+          data-phone="0381668166">03 81 66 81 66</a>
+      </div>
+
+      <div class="numero utile" role="region" aria-labelledby="poison-titre">
+        <h3 id="poison-titre">Centre Anti-Poison</h3>
+        <p>Pour toute intoxication ou ingestion suspecte</p>
+        <a href="tel:0383225050" class="telephone" aria-label="Numéro du Centre Anti-Poison: 03 83 22 50 50"
+          data-phone="0383225050">03 83 22 50 50</a>
+      </div>
+
+      <div class="numero utile" role="region" aria-labelledby="rural-titre">
+        <h3 id="rural-titre">Service d'aide médicale en milieu rural</h3>
+        <p>Transport médical pour personnes isolées</p>
+        <a href="tel:0381570000" class="telephone" aria-label="Numéro du service d'aide médicale rurale: 03 81 57 00 00"
+          data-phone="0381570000">03 81 57 00 00</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="specialistes-titre" aria-live="polite">
+      <h2 id="specialistes-titre">Médecins Spécialistes Proches</h2>
+      <p class="sr-only">
+        Section contenant les coordonnées des médecins spécialistes à
+        proximité
+      </p>
+
+      <div class="numero utile" role="region" aria-labelledby="cardio-titre">
+        <h3 id="cardio-titre">Cardiologue</h3>
+        <p>Dr. Dupont - Centre Médical de Saint-Lô</p>
+        <a href="tel:0233456789" class="telephone" aria-label="Numéro du cardiologue: 02 33 45 67 89"
+          data-phone="0233456789">02 33 45 67 89</a>
+      </div>
+
+      <div class="numero utile" role="region" aria-labelledby="pediatre-titre">
+        <h3 id="pediatre-titre">Pédiatre</h3>
+        <p>Dr. Martin - Cabinet de Pédiatrie</p>
+        <a href="tel:0233456790" class="telephone" aria-label="Numéro du pédiatre: 02 33 45 67 90"
+          data-phone="0233456790">02 33 45 67 90</a>
+      </div>
+
+      <div class="numero utile" role="region" aria-labelledby="gyneco-titre">
+        <h3 id="gyneco-titre">Gynécologue</h3>
+        <p>Dr. Dubois - Centre de Santé</p>
+        <a href="tel:0233456791" class="telephone" aria-label="Numéro du gynécologue: 02 33 45 67 91"
+          data-phone="0233456791">02 33 45 67 91</a>
+      </div>
+
+      <div class="numero utile" role="region" aria-labelledby="dermato-titre">
+        <h3 id="dermato-titre">Dermatologue</h3>
+        <p>Dr. Leroy - Cabinet de Dermatologie</p>
+        <a href="tel:0233456792" class="telephone" aria-label="Numéro du dermatologue: 02 33 45 67 92"
+          data-phone="0233456792">02 33 45 67 92</a>
+      </div>
+
+      <div class="numero utile" role="region" aria-labelledby="osteo-titre">
+        <h3 id="osteo-titre">Ostéopathe</h3>
+        <p>M. Bernard - Cabinet d'Ostéopathie</p>
+        <a href="tel:0233456793" class="telephone" aria-label="Numéro de l'ostéopathe: 02 33 45 67 93"
+          data-phone="0233456793">02 33 45 67 93</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="info-titre" aria-live="polite">
+      <h2 id="info-titre">Informations Importantes</h2>
+      <div class="numero" role="region" aria-labelledby="urgences-info">
+        <p id="urgences-info">
+          En cas d'urgence en dehors des horaires d'ouverture du cabinet :
+        </p>
+        <ul>
+          <li>Composez le 15 (SAMU) pour toute urgence médicale</li>
+          <li>Consultez la pharmacie de garde en appelant le 3237</li>
           <li>
-            <a href="urgences.html" aria-current="page"
-              >Urgences et numéros utiles</a
-            >
+            Pour des conseils médicaux non urgents, laissez un message au
+            cabinet
           </li>
         </ul>
-      </nav>
-    </header>
-
-    <main id="main" role="main">
-      <noscript>
-        <div class="alert-noscript" role="alert">
-          <p>
-            JavaScript est désactivé. Le contenu reste accessible, mais
-            certaines fonctionnalités peuvent être limitées.
-          </p>
-        </div>
-      </noscript>
-      <section aria-labelledby="cabinet-titre" aria-live="polite">
-        <h2 id="cabinet-titre">Notre Cabinet</h2>
-
-        <div class="numero" role="region" aria-labelledby="cabinet-info">
-          <h3 id="cabinet-info">Cabinet Le Coz</h3>
-          <p>15 rue de la Mairie, 50400 Marchaux</p>
-          <a
-            href="tel:0381579630"
-            class="telephone"
-            aria-label="Numéro du cabinet Le Coz : 03 81 57 96 30"
-            data-phone="0381579630"
-            >03 81 57 96 30</a
-          >
-
-          <div class="horaires" role="region" aria-labelledby="horaires-titre">
-            <h4 id="horaires-titre">Horaires d'ouverture</h4>
-            <table aria-label="Horaires d'ouverture du cabinet">
-              <thead>
-                <tr>
-                  <th scope="col">Jour</th>
-                  <th scope="col">Matin</th>
-                  <th scope="col">Après-midi</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Lundi</th>
-                  <td>8h30 - 12h00</td>
-                  <td>14h00 - 18h00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Mardi</th>
-                  <td>8h30 - 12h00</td>
-                  <td>14h00 - 18h00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Mercredi</th>
-                  <td>8h30 - 12h00</td>
-                  <td>Fermé</td>
-                </tr>
-                <tr>
-                  <th scope="row">Jeudi</th>
-                  <td>8h30 - 12h00</td>
-                  <td>14h00 - 18h00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Vendredi</th>
-                  <td>8h30 - 12h00</td>
-                  <td>14h00 - 17h00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Samedi</th>
-                  <td>9h00 - 12h00</td>
-                  <td>Fermé</td>
-                </tr>
-                <tr>
-                  <th scope="row">Dimanche</th>
-                  <td colspan="2">Fermé</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="urgences-titre" aria-live="assertive">
-        <h2 id="urgences-titre">Numéros d'Urgence</h2>
-        <p class="sr-only">
-          Section contenant les numéros d'urgence vitaux à composer en cas
-          d'urgence médicale
+        <p>
+          Une permanence téléphonique est assurée pour les urgences médicales
+          des patients du cabinet.
         </p>
-
-        <div class="numero urgence" role="region" aria-labelledby="samu-titre">
-          <h3 id="samu-titre">SAMU</h3>
-          <p>Pour toute urgence médicale vitale</p>
-          <a
-            href="tel:15"
-            class="telephone"
-            aria-label="Numéro de téléphone du SAMU: 15"
-            data-phone="15"
-            >15</a
-          >
-        </div>
-
-        <div
-          class="numero urgence"
-          role="region"
-          aria-labelledby="pompiers-titre"
-        >
-          <h3 id="pompiers-titre">Pompiers</h3>
-          <p>Pour les secours d'urgence</p>
-          <a
-            href="tel:18"
-            class="telephone"
-            aria-label="Numéro de téléphone des Pompiers: 18"
-            data-phone="18"
-            >18</a
-          >
-        </div>
-
-        <div
-          class="numero urgence"
-          role="region"
-          aria-labelledby="europe-titre"
-        >
-          <h3 id="europe-titre">Numéro d'Urgence Européen</h3>
-          <p>Accessible même sans réseau téléphonique</p>
-          <a
-            href="tel:112"
-            class="telephone"
-            aria-label="Numéro d'urgence européen: 112"
-            data-phone="112"
-            >112</a
-          >
-        </div>
-      </section>
-
-      <section aria-labelledby="pharmacies-titre" aria-live="polite">
-        <h2 id="pharmacies-titre">Pharmacies Proches</h2>
-        <p class="sr-only">
-          Section contenant les coordonnées des pharmacies de garde et
-          permanentes
-        </p>
-
-        <div
-          class="numero pharmacie"
-          role="region"
-          aria-labelledby="pharmacie-centrale-titre"
-        >
-          <h3 id="pharmacie-centrale-titre">Pharmacie Centrale</h3>
-          <p>2 place du Village, 50400 Marchaux</p>
-          <a
-            href="tel:0381579322"
-            class="telephone"
-            aria-label="Numéro de la Pharmacie Centrale: 03 81 57 93 22"
-            data-phone="0381579322"
-            >03 81 57 93 22</a
-          >
-        </div>
-
-        <div
-          class="numero pharmacie"
-          role="region"
-          aria-labelledby="pharmacie-garde-titre"
-        >
-          <h3 id="pharmacie-garde-titre">Pharmacie de Garde</h3>
-          <p>Service de garde des pharmacies du secteur</p>
-          <a
-            href="tel:3237"
-            class="telephone"
-            aria-label="Numéro du service de pharmacie de garde: 3237"
-            data-phone="3237"
-            >3237</a
-          >
-        </div>
-      </section>
-
-      <section aria-labelledby="utiles-titre" aria-live="polite">
-        <h2 id="utiles-titre">Numéros Médicaux Utiles</h2>
-        <p class="sr-only">
-          Section contenant les numéros de téléphone des services médicaux non
-          urgents
-        </p>
-
-        <div class="numero utile" role="region" aria-labelledby="sos-titre">
-          <h3 id="sos-titre">SOS Médecins</h3>
-          <p>Consultations médicales à domicile</p>
-          <a
-            href="tel:3624"
-            class="telephone"
-            aria-label="Numéro de SOS Médecins: 36 24"
-            data-phone="3624"
-            >36 24</a
-          >
-        </div>
-
-        <div class="numero utile" role="region" aria-labelledby="hopital-titre">
-          <h3 id="hopital-titre">Centre Hospitalier Régional</h3>
-          <p>Hôpital Jean Minjoz - Besançon</p>
-          <a
-            href="tel:0381668166"
-            class="telephone"
-            aria-label="Numéro du Centre Hospitalier: 03 81 66 81 66"
-            data-phone="0381668166"
-            >03 81 66 81 66</a
-          >
-        </div>
-
-        <div class="numero utile" role="region" aria-labelledby="poison-titre">
-          <h3 id="poison-titre">Centre Anti-Poison</h3>
-          <p>Pour toute intoxication ou ingestion suspecte</p>
-          <a
-            href="tel:0383225050"
-            class="telephone"
-            aria-label="Numéro du Centre Anti-Poison: 03 83 22 50 50"
-            data-phone="0383225050"
-            >03 83 22 50 50</a
-          >
-        </div>
-
-        <div class="numero utile" role="region" aria-labelledby="rural-titre">
-          <h3 id="rural-titre">Service d'aide médicale en milieu rural</h3>
-          <p>Transport médical pour personnes isolées</p>
-          <a
-            href="tel:0381570000"
-            class="telephone"
-            aria-label="Numéro du service d'aide médicale rurale: 03 81 57 00 00"
-            data-phone="0381570000"
-            >03 81 57 00 00</a
-          >
-        </div>
-      </section>
-
-      <section aria-labelledby="specialistes-titre" aria-live="polite">
-        <h2 id="specialistes-titre">Médecins Spécialistes Proches</h2>
-        <p class="sr-only">
-          Section contenant les coordonnées des médecins spécialistes à
-          proximité
-        </p>
-
-        <div class="numero utile" role="region" aria-labelledby="cardio-titre">
-          <h3 id="cardio-titre">Cardiologue</h3>
-          <p>Dr. Dupont - Centre Médical de Saint-Lô</p>
-          <a
-            href="tel:0233456789"
-            class="telephone"
-            aria-label="Numéro du cardiologue: 02 33 45 67 89"
-            data-phone="0233456789"
-            >02 33 45 67 89</a
-          >
-        </div>
-
-        <div
-          class="numero utile"
-          role="region"
-          aria-labelledby="pediatre-titre"
-        >
-          <h3 id="pediatre-titre">Pédiatre</h3>
-          <p>Dr. Martin - Cabinet de Pédiatrie</p>
-          <a
-            href="tel:0233456790"
-            class="telephone"
-            aria-label="Numéro du pédiatre: 02 33 45 67 90"
-            data-phone="0233456790"
-            >02 33 45 67 90</a
-          >
-        </div>
-
-        <div class="numero utile" role="region" aria-labelledby="gyneco-titre">
-          <h3 id="gyneco-titre">Gynécologue</h3>
-          <p>Dr. Dubois - Centre de Santé</p>
-          <a
-            href="tel:0233456791"
-            class="telephone"
-            aria-label="Numéro du gynécologue: 02 33 45 67 91"
-            data-phone="0233456791"
-            >02 33 45 67 91</a
-          >
-        </div>
-
-        <div class="numero utile" role="region" aria-labelledby="dermato-titre">
-          <h3 id="dermato-titre">Dermatologue</h3>
-          <p>Dr. Leroy - Cabinet de Dermatologie</p>
-          <a
-            href="tel:0233456792"
-            class="telephone"
-            aria-label="Numéro du dermatologue: 02 33 45 67 92"
-            data-phone="0233456792"
-            >02 33 45 67 92</a
-          >
-        </div>
-
-        <div class="numero utile" role="region" aria-labelledby="osteo-titre">
-          <h3 id="osteo-titre">Ostéopathe</h3>
-          <p>M. Bernard - Cabinet d'Ostéopathie</p>
-          <a
-            href="tel:0233456793"
-            class="telephone"
-            aria-label="Numéro de l'ostéopathe: 02 33 45 67 93"
-            data-phone="0233456793"
-            >02 33 45 67 93</a
-          >
-        </div>
-      </section>
-
-      <section aria-labelledby="info-titre" aria-live="polite">
-        <h2 id="info-titre">Informations Importantes</h2>
-        <div class="numero" role="region" aria-labelledby="urgences-info">
-          <p id="urgences-info">
-            En cas d'urgence en dehors des horaires d'ouverture du cabinet :
-          </p>
-          <ul>
-            <li>Composez le 15 (SAMU) pour toute urgence médicale</li>
-            <li>Consultez la pharmacie de garde en appelant le 3237</li>
-            <li>
-              Pour des conseils médicaux non urgents, laissez un message au
-              cabinet
-            </li>
-          </ul>
-          <p>
-            Une permanence téléphonique est assurée pour les urgences médicales
-            des patients du cabinet.
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <footer id="footer" role="contentinfo">
-      <div class="accessibility-controls">
-        <button id="contrast-toggle" aria-pressed="false" class="access-button">
-          Contraste élevé
-        </button>
-        <button
-          id="text-smaller"
-          class="access-button"
-          aria-label="Réduire la taille du texte"
-        >
-          A-
-        </button>
-        <button
-          id="text-larger"
-          class="access-button"
-          aria-label="Augmenter la taille du texte"
-        >
-          A+
-        </button>
       </div>
-      <p>&copy; 2024 - Cabinet du Dr. Jérôme Le Coz</p>
-      <p><a href="#accessibilite">Déclaration d'accessibilité</a></p>
-      <p class="mentions-legales">
-        <a href="#">Mentions légales</a> |
-        <a href="#">Politique de confidentialité</a> |
-        <a href="mailto:contact@docteurlecoz.fr">Contact</a>
-      </p>
-    </footer>
+    </section>
+  </main>
 
-    <script type="text/javascript" src="assets/js/script.js"></script>
-  </body>
+  <footer id="footer" role="contentinfo">
+    <div class="accessibility-controls">
+      <button id="contrast-toggle" aria-pressed="false" class="access-button">
+        Contraste élevé
+      </button>
+      <button id="text-smaller" class="access-button" aria-label="Réduire la taille du texte">
+        A-
+      </button>
+      <button id="text-larger" class="access-button" aria-label="Augmenter la taille du texte">
+        A+
+      </button>
+    </div>
+    <p>&copy; 2024 - Cabinet du Dr. Jérôme Le Coz</p>
+    <p><a href="#accessibilite">Déclaration d'accessibilité</a></p>
+    <p class="mentions-legales">
+      <a href="#">Mentions légales</a> |
+      <a href="#">Politique de confidentialité</a> |
+      <a href="mailto:contact@docteurlecoz.fr">Contact</a>
+    </p>
+  </footer>
+
+  <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
 </html>
