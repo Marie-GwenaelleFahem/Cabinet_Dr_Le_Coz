@@ -65,3 +65,17 @@ Outils utilisés :
 /assets/images/
 /.github/workflows/deploy.yml
 README.md
+
+---
+
+
+## Ressources
+- Web AIM **[https://webaim.org/resources/contrastchecker/]**
+- Acess 42 **[https://access42.net/tester-accessibilite-reconnaissance-vocale/]**
+- CompressJPEG **[https://compressjpeg.com/fr/]**
+- Typographie **[https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0]**
+- LightHouse **[https://developer.chrome.com/docs/lighthouse/overview?hl=fr]**
+
+
+
+##
