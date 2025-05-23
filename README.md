@@ -40,8 +40,7 @@ Normes respectées :
 
 ## Déploiement
 Application accessible ici :  
-🔗 **[https://marie-gwenaellefahem.github.io/SobriSant-/]**
-
+🔗 **[https://marie-gwenaellefahem.github.io/Cabinet_Dr_Le_Coz/]**
 Déploiement automatique via **GitHub Actions** à chaque `push` sur la branche `main`.
 
 ---
