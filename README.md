@@ -40,7 +40,7 @@ Normes respectées :
 
 ## Déploiement
 Application accessible ici :  
-🔗 **[https://marie-gwenaellefahem.github.io/Cabinet_Dr_Le_Coz/]**
+🔗 [Cabinet du Docteur Jérôme Le Coz](https://marie-gwenaellefahem.github.io/Cabinet_Dr_Le_Coz/) <br>
 Déploiement automatique via **GitHub Actions** à chaque `push` sur la branche `main`.
 
 ---
@@ -70,11 +70,11 @@ README.md
 
 
 ## Ressources
-- Web AIM **[https://webaim.org/resources/contrastchecker/]**
-- Acess 42 **[https://access42.net/tester-accessibilite-reconnaissance-vocale/]**
-- CompressJPEG **[https://compressjpeg.com/fr/]**
-- Typographie **[https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0]**
-- LightHouse **[https://developer.chrome.com/docs/lighthouse/overview?hl=fr]**
+- [Web AIM](https://webaim.org/resources/contrastchecker/)
+- [Access 42](https://access42.net/tester-accessibilite-reconnaissance-vocale/)
+- [CompressJPEG](https://compressjpeg.com/fr/)
+- [Typographie](https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0)
+- [LightHouse](https://developer.chrome.com/docs/lighthouse/overview?hl=fr)
 
 
 
